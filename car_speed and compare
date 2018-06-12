@@ -1,0 +1,29 @@
+# sachinpythonclass
+def drive(c_s):
+	if c_s > 200:
+		print("you r insane, man!!!")
+	elif c_s > 100:
+		print("too fast!")
+	elif c_s > 70 and c_s < 80:
+		print("the optimal speed for ur car.")
+	else:
+		print("u r driving below the speed limit . well done!!")
+drive(500)
+drive(50)
+drive(120)
+
+
+def compar(a):
+	if a <1:
+		print("big")
+	elif a<5:
+		print("really big")
+	elif a==10:
+		print("approaching enormity")
+	elif a> 10:
+		print("enormous")
+
+compar(0)
+compar(2)
+compar(10)
+compar(12)
