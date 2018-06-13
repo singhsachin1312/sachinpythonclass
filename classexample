@@ -1,0 +1,10 @@
+# sachinpythonclass
+class car:
+	def __init__(self,x):
+		self.x= x
+	def turn_left(self,x=0):
+		self.x=x
+		print(x)
+car(55).turn_left()
+print("left")
+print(car(33).x)
