@@ -1,0 +1,13 @@
+# sachinpythonclass
+class car:
+	def __init__(self):
+		self.x= 40
+		print ("i m constructor!!")
+	def turn_left(self,x):
+		self.x=x
+		print("left")
+		
+var=car()
+print(var.x)
+var.turn_left(12)
+print(var.x)
