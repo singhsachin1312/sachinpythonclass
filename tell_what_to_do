@@ -1,0 +1,13 @@
+# sachinpythonclass
+def tell_wht_to_do(age):
+	if person_is_old(age):
+		print("u deserved to have a long vacation")
+	else:
+		print("go to work")
+
+def person_is_old(age):
+	if(age<60):
+		return True
+	else:
+		return False
+tell_wht_to_do(20)
