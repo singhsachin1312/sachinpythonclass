@@ -1,0 +1,5 @@
+# sachinpythonclass
+try:
+	1/0
+except ZeroDivisionError as e:
+	print(str(e)+"  but it is oky")
