@@ -1,0 +1,8 @@
+# sachinpythonclass
+class YourException(Exception):
+	pass
+try:
+	
+	raise YourException("human-readable message")
+except YourException as e:
+	print("Your exception just occured with a message:" +str(e))
