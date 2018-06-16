@@ -1,0 +1,5 @@
+# sachinpythonclass
+def area_of_triangle(base,height):
+	area = (base*height)/2
+	print("area of triangle is= %.2f" %area)
+area_of_triangle(4,7)
