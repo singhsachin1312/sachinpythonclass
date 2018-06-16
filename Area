@@ -1,0 +1,22 @@
+# sachinpythonclass
+def area_of_rectangle(width,height):
+	area = width*height
+	print("area of rectangle = %.2f" %area)
+area_of_rectangle(6,4)
+
+
+
+
+PI=3.14
+def Area_of_circle(r):
+	area = PI*r*r
+	print("area of circle is = %.2f" %area)
+Area_of_circle(2)
+
+
+
+
+def area_of_triangle(base,height):
+	area = (base*height)/2
+	print("area of triangle is= %.2f" %area)
+area_of_triangle(4,7)
