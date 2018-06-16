@@ -1,0 +1,6 @@
+# sachinpythonclass
+PI=3.14
+def Area_of_circle(r):
+	area = PI*r*r
+	print("area of circle is = %.2f" %area)
+Area_of_circle(2)
