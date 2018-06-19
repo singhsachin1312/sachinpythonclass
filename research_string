@@ -1,0 +1,18 @@
+# sachinpythonclass
+import re
+'''
+a=re.search('f......','food bar')
+print(a)'''
+
+
+'''def is_valid_python_var_name(string):
+    found=re.match("[_A][Z-a-0-9-a-z0-9][_a-zA-Z]",string)
+    return bool(found)
+print(is_valid_python_var_name("AZ54dfgd65"))'''
+
+
+
+'''def get_no_of_occurrences(string,substring):
+    findings=list(re.finditer(substring,string))
+    return len(findings)
+print(get_no_of_occurrences(" tree is hh gggg tree ooo hhag tree","tree"))'''
