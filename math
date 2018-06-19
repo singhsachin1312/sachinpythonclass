@@ -1,0 +1,9 @@
+# sachinpythonclass
+a=math.sin(math.radians(30))
+print(a)
+b=math.cos(math.radians(60))
+print(b)
+c=math.pi
+print(c)
+d=math.sqrt(16)
+print(d)
