@@ -20,7 +20,7 @@ print(json.dumps(jsonToPython))         '''
 
 
 
-
+'''
 student='{"101":{"name": "Sachin", "age": 21,"ispass":true},' \    
         '"102":{"name":"Frank", "age": 38,"ispass":true},'    \
         '"103":{"name": "bhupuu", "age": 22,"ispass":true}}'
@@ -28,6 +28,20 @@ student='{"101":{"name": "Sachin", "age": 21,"ispass":true},' \
 jsonPython=json.loads(student)
 print(jsonPython)
 b=json.dumps(jsonPython)
-print(b)
+print(b) '''
 
+
+
+
+
+
+
+
+student='{"centercode":"100","batch":[{"name": "sachsin","fee": "2000","phoneNo": "14321776676"},' \
+        '{"name": "sacshin","fee": "20040","phoneNo": "143217477"},' \
+        '{"name": "sachfin","fee": "20040","phoneNo": "146676"}]}'
+aaa=json.loads(student)
+print(aaa)
+bb=json.dumps(aaa)
+print(bb)
 
