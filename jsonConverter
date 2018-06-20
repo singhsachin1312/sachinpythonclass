@@ -1,0 +1,33 @@
+# sachinpythonclass
+import json
+
+'''listdata=["one","two"]
+data=json.dumps(listdata)    #json to object
+print(data)
+json.loads(data)   '''          #object to json
+
+
+
+
+
+'''jsondata='{"name": "Frank", "age": 38,"available": true}'
+jsonToPython=json.loads(jsondata)
+print(jsonToPython)
+print(json.dumps(jsonToPython))         '''
+
+
+
+
+
+
+
+student='{"101":{"name": "Sachin", "age": 21,"ispass":true},' \    
+        '"102":{"name":"Frank", "age": 38,"ispass":true},'    \
+        '"103":{"name": "bhupuu", "age": 22,"ispass":true}}'
+#print(json.dumps(student)) ;
+jsonPython=json.loads(student)
+print(jsonPython)
+b=json.dumps(jsonPython)
+print(b)
+
+
