@@ -1,0 +1,17 @@
+# sachinpythonclass
+
+
+import json
+def jsonize_if_not_already_json(value):
+    try:
+        value=json.loads(value)
+    except ValueError:
+        pass
+    return json.dumps(value)
+
+print (jsonize_if_not_already_json("one"))
+print(jsonize_if_not_already_json("one"))
+print(jsonize_if_not_already_json('False'))
+print(jsonize_if_not_already_json("false"))
+print(jsonize_if_not_already_json("1"))
+print(jsonize_if_not_already_json('1'))
