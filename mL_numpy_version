@@ -1,0 +1,8 @@
+# sachinpythonclass
+import numpy,scipy
+
+
+
+print(numpy.version.full_version)
+print(scipy.version.full_version)
+print(scipy.dot is numpy.dot)
