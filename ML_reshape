@@ -1,0 +1,15 @@
+# sachinpythonclass
+import numpy
+import numpy.core.records as ncr
+
+a=numpy.array([0,1,2,3,4,5,6,4,5,3,4,2])
+print(a)
+print(ncr.array([0,1,2,3,4,5]))
+print(a.ndim)
+print("shape -",a.shape)
+b=a.reshape((4,3))
+print("reshape ",b)
+print(a*2)
+print(a**2)
+print([0,1,2,3,4,5,6,5,3,4,2]*2)
+print(a>4)
