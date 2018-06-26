@@ -1,0 +1,7 @@
+# sachinpythonclass
+import numpy,scipy
+
+c=scipy.array((1,2,scipy.nan,3,4))
+print (c)
+print(scipy.isnan(c))
+print(~scipy.isnan(c))
