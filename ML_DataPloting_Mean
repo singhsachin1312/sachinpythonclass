@@ -1,0 +1,20 @@
+# sachinpythonclass
+
+import scipy as sp
+import matplotlib.pyplot as plt
+
+data = sp.genfromtxt ( "web_traffic1.csv", delimiter=',' )
+print ( data )
+print ( data.shape )
+x = data[:, 0]
+y = data[:, 1]
+print(sp.mean(x))
+print(sp.mean(y))
+plt.scatter ( x, y )
+plt.title ( "wtotlm" )
+plt.xlabel ( "time" )
+plt.ylabel ( "hits/hour" )
+plt.xticks ()
+plt.autoscale ( tight=True )
+plt.grid ()
+plt.show ()
