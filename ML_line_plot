@@ -1,0 +1,28 @@
+# sachinpythonclass
+
+mport scipy as sp
+import matplotlib.pyplot as plt
+
+data = sp.genfromtxt ( "web_traffic1.csv", delimiter=',' )
+print ( data )
+print ( data.shape )
+x = data[:, 0]
+y = data[:, 1]
+print(sp.mean(x))
+print(sp.mean(y))
+plt.scatter ( x, y )
+plt.title ( "wtotlm" )
+plt.xlabel ( "time" )
+plt.ylabel ( "hits/hour" )
+plt.xticks ()
+plt.autoscale ( tight=True )
+plt.grid ()
+#fp1=sp.polyfit(x,y,1,full=True)
+#f1=sp.poly1d(fp1)
+#print(error(f1,x,y))
+
+fx=sp.linspace(-1,1000)
+plt.plot(fx,linewidth=6)
+plt.legend(["d=%i" ],loc="upper left")
+
+plt.show ()
