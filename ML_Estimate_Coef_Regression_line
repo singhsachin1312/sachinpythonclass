@@ -4,16 +4,17 @@ import matplotlib.pyplot as plt
 
 
 def estimate_coef(x,y):
+#no. of observations/points
     print(x)
     print(y)
     n=sp.size(x)
-    print("size- ",n)
+    print("size- ",n) #mean of x and y vector
     m_x,m_y = sp.mean(x),np.mean(y)
-    print("mean x- ",m_x, "mean y- ",m_y)
+    print("mean x- ",m_x, "mean y- ",m_y) #calculating cross deviation and deviation about x
     SS_xy=sp.sum(y*x-n*m_y*m_x)
     SS_xx=sp.sum(x*x-n*m_x*m_x)
     print(SS_xx)
-    print(SS_xy)
+    print(SS_xy)  #calculating regression coefficient
     b_1=SS_xy/SS_xx
     b_0=m_y-b_1*m_x
     return b_0,b_1
