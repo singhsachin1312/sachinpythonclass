@@ -1,0 +1,14 @@
+# sachinpythonclass
+
+
+import io
+from urllib.request import urlopen
+from PIL import Image
+res=urlopen("https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg")
+im_file=io.BytesIO(res.read())
+im=Image.open(im_file)
+im=im.rotate(90)
+im=im.resize((800,600))
+im.save("downloaded_image.jpg","JPEG")
+
+im.show()
