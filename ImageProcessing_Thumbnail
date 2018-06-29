@@ -1,0 +1,9 @@
+# sachinpythonclass
+from PIL import Image
+
+size=128,128
+filename="Tiger-Yawn-tigers-12314677-1024-768.jpg"
+im=Image.open(filename)
+im.thumbnail(size,Image.ANTIALIAS)
+im.save(filename+".thumbnail","JPEG")
+im.show()
