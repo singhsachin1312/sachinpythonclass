@@ -1,0 +1,11 @@
+# sachinpythonclass
+
+from PIL import Image
+m=Image.open("Tiger-Yawn-tigers-12314677-1024-768.jpg")
+m.show()
+data=list(m.getdata())
+print(data)
+the_file=open("pixel.txt","w")
+pixel=[data]
+for integer in pixel:
+    the_file.write(str(integer)+"\n")
