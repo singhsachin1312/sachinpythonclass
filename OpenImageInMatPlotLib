@@ -1,0 +1,12 @@
+# sachinpythonclass
+
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+
+i=Image.open("images/sentdex.png")
+ir=np.array(i)
+fig=plt.figure()
+ax1=plt.subplot2grid((8,6),(0,0),rowspan=4,colspan=4)
+ax1.imshow(i)
+plt.show()
