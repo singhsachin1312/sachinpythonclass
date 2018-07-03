@@ -1,0 +1,39 @@
+# sachinpythonclass
+
+
+from collections import Counter
+
+import numpy as np
+
+from PIL import Image
+
+
+def whatNumIsThis(filePath):
+
+    matchedArr=[]
+    loadExamps=open('numArraEx.txt','r').read()
+    loadExamps=loadExamps.split('\n')
+
+    i=Image.open(filePath)
+    iar=np.array(i)
+    iar1=iar.tolist()
+    inQuestion=str(iar1)
+    print(inQuestion)
+    for eachExample in loadExamps:
+        if len(eachExample)>3:
+            splitEx=eachExample.split('::')
+            currentNum=splitEx[0]
+            currentArray=splitEx[1]
+
+            eachPixEx=currentArray.split('],')
+            eachPixInQ=inQuestion.split('],')
+            x=0
+            while x<len(eachPixEx):
+                if eachPixEx[x]==eachPixInQ[x]:
+                    matchedArr.append(int(currentNum))
+                x+=1
+    print(matchedArr)
+    x=Counter(matchedArr)
+    print(x)
+    #/ home / admin / PycharmProjects / ImageProcessing / images / numbers / 0.5.png
+whatNumIsThis('/home/admin/PycharmProjects/ImageProcessing/images/numbers/1.1.png')
