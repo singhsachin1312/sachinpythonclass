@@ -87,6 +87,7 @@ plt.show()
 
 
 if __name__ =='__main__':
- createExample()
- thresholdImage()
- whatNumIsThis("/home/admin/PycharmProjects/ImageProcessing/images/numbers/0.2.png")
+
+    createExample()
+    thresholdImage()
+    whatNumIsThis('/home/admin/PycharmProjects/ImageProcessing/images/numbers/1.1.png')
