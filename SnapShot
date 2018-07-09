@@ -1,0 +1,10 @@
+SnapShot From video
+import cv2
+vidcap=cv2.VideoCapture('/home/diksha/PycharmProjects/untitled1/videoplayback')
+sucess,image= vidcap.read()
+count=0
+while sucess:
+    cv2.imwrite("frame%d.jpg"% count,image) #save frame as jpeg
+    sucess,image=vidcap.read()
+    print(count,'Read a new frame: ',sucess)
+    count +=1
