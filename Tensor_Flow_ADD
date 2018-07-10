@@ -1,0 +1,8 @@
+# sachinpythonclass
+
+
+import tensorflow as tf
+a= tf.add(4,6)
+sess=tf.session()
+print (sess.run(a))
+sess.close()
