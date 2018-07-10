@@ -1,0 +1,17 @@
+# sachinpythonclass
+
+
+
+
+import tensorflow as tf
+
+x=2
+y=4
+op1=tf.add(x,y)
+op2=tf.multiply(x,y)
+op3=tf.pow(op1,op2)
+with tf.Session() as sess:
+    op3=sess.run(op3)
+    print(op3)
+    print(sess.run(op2))
+    print(sess.run(op1))
