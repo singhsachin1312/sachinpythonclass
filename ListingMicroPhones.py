@@ -1,5 +1,5 @@
 import speech_recognition as sr
-import pyaudio
+import pyaudio    #errorpyaudio
 
 r=sr.Recognizer()
 mic=sr.Microphone()
