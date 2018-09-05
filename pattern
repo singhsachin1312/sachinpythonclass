@@ -1,0 +1,66 @@
+# sachinpythonclass
+
+'''num=int(input("enter the no. of rows"))
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+'''
+
+
+
+
+'''
+num=int(input("enter the no. of rows"))
+
+for i in range(0,num):
+    for j in range(0,num):
+        print(end=" ")
+        
+    for j in range(0,i+1):
+        print("*",end=" ")
+    print()
+'''
+
+
+
+
+'''
+def star(n):
+    k=2*n-2 #no. of spaces
+    for i in range(0,n):
+        for j in range(0,k):
+            print(end=" ")
+        k=k-1
+        for j in range (0,i+1):
+            print("* ",end="")
+        print("\n")
+star(6)
+'''
+
+
+
+
+'''
+def pattern(n):
+
+    for i in range(1,n+1):
+
+        for j in range(1,i+1):
+
+            print(j, end=" ")
+
+        print("\n")
+pattern(6)
+'''
+
+
+
+
+'''
+word='aaaaa'
+for i in range(len(word)):
+    print (' '*i,word[i])
+    word_length=len(word)
+    for i in range(len(word)):
+        print(' '*(word_length-i),word[i])'''
